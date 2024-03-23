@@ -32,9 +32,7 @@ public class calcIMC {
             }
 
         double alturanum = Double.parseDouble(altura);
-        
-        // calculo do imc
-
+     
         double imc = peso / (alturanum * alturanum);
 
         String imcBonito = df.format(imc);
@@ -43,7 +41,7 @@ public class calcIMC {
 
         System.out.println("Seu IMC é " + imcBonito);
 
-
+        // calculo do imc
 
         if (genero.equals("homem")){
             if (imcDouble >= 39.9 ) {
