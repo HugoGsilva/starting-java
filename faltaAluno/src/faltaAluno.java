@@ -5,7 +5,7 @@ public class faltaAluno {
 
         Scanner pergunta = new Scanner(System.in);
 
-        System.out.println("insira sua carga horaria");
+        System.out.println("insira sua carga horaria em horas");
         double cargaH = pergunta.nextDouble();
 
         System.out.println("Insira suas faltas");
@@ -23,13 +23,27 @@ public class faltaAluno {
         System.out.println("Insira nota do quarto Bimestre");
         double b4 = pergunta.nextDouble();
 
+        pergunta.close();
+
         //parte que pega os dados do usuario
 
-        
+        if (faltas > (cargaH*0.25)) {
+            System.out.println("Você Reprovou Por Faltas" );
+         }        
+         else {
+            double Mediafinal = (b1+b2+b3+b4) / 4;
 
+            if (Mediafinal >= 6.0) {
+                System.out.println("Você passou de ano");
+            
+            }
+            else if (Mediafinal < 6.0){
+                System.out.println("Você reprovou Por Notas");
+            }
 
+         }
 
-
+         //parte que calcula se passou ou n
 
 
     }

@@ -1,6 +1,6 @@
 import java.text.DecimalFormat;
 import java.util.Scanner;
-import java.text.DecimalFormatSymbols;
+import java.text.DecimalFormatSymbols; 
 import java.text.ParseException;
 import java.util.Locale;
 // parte que importa as libs
