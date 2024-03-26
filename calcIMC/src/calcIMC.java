@@ -10,6 +10,7 @@ public class calcIMC {
 
     public static void main(String[] args) throws ParseException {
 
+        @SuppressWarnings("deprecation")
         DecimalFormatSymbols symbols = new DecimalFormatSymbols(new Locale("pt_BR")); // perguntar ao professor se tem uma pratica melhor para isso.
         DecimalFormat df = new DecimalFormat("#.##", symbols); // parte que corta os numeros quebrados
         Scanner pergunta = new Scanner(System.in);
