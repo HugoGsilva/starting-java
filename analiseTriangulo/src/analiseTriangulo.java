@@ -4,13 +4,13 @@ public class analiseTriangulo {
     public static void main(String[] args) {
         Scanner perguntas = new Scanner(System.in);
     
-            System.out.println("Insira o comprimento do primeiro lado");
+            System.out.println("Insira o comprimento  do primeiro lado com apenas numeros inteiros");
             double lado1 = perguntas.nextDouble();
             
-            System.out.println("Insira o comprimento do segundo lado:");
+            System.out.println("Insira o comprimento  do segundo lado com apenas numeros inteiros");
             double lado2 = perguntas.nextDouble();
 
-            System.out.println("Insira o comprimento do terceiro lado:");
+            System.out.println("Insira o comprimento  do terceiro lado com apenas numeros inteiros");
             double lado3 = perguntas.nextDouble();
 
             if (lado1 == lado2 && lado2 == lado3  ) {
@@ -22,7 +22,7 @@ public class analiseTriangulo {
             else {
                 System.out.println("Triângulo Escaleno: possui 3 lados diferentes.");
 
-            }
+             }
 
         perguntas.close();
         
